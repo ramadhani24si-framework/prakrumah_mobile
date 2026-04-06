@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Sucii-apps</string>
+    <string name="app_name">Sucii Glimmer</string>
+    <string name="title_login">Selamat Datang!</string>
+    <string name="desc_login">Silahkan masuk untuk melanjutkan akses aplikasi.</string>
+    <string name="btn_login">Masuk Sekarang</string>
+    <string name="welcome_msg">Halo, Selamat Datang !</string>
 </resources>
