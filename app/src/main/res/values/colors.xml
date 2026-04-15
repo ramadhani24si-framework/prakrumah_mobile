@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary_blue">#3E97FF</color>
-    <color name="dark_grey">#333333</color>
-    <color name="light_grey">#F5F5F5</color>
+    <color name="primary_start">#4FACFE</color>
+    <color name="primary_end">#00F2FE</color>
+    <color name="bg_light">#F8FBFF</color>
+    <color name="text_dark">#2D3436</color>
     <color name="white">#FFFFFF</color>
+    <color name="error_red">#FF5252</color>
+
+    <color name="primary_blue">#4FACFE</color>
+    <color name="secondary_blue">#E8F0FE</color>
+    <color name="dark_blue">#185ABC</color>
+    <color name="black">#000000</color>
+    <color name="light_grey">#F1F3F4</color>
 </resources>

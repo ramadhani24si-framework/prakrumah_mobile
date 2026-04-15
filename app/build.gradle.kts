@@ -9,7 +9,7 @@ android {
             minorApiLevel = 1
 
             buildFeatures {
-             viewBinding = true
+               viewBinding = true
             }
         }
     }
