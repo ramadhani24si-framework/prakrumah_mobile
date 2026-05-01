@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary_blue"
+    android:background="@color/bg_light"
     android:fillViewport="true">
 
     <LinearLayout
@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
             android:src="@drawable/ic_logo_apps" />
 
         <TextView
@@ -25,24 +25,29 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="LearnPath"
-            android:textColor="@color/text_dark"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:textAlignment="center" />
+            android:textColor="@color/primary_blue"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/layoutLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             app:cardCornerRadius="20dp"
-            app:cardElevation="12dp">
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login to your account"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/text_dark"/>
 
                 <EditText
                     android:id="@+id/inputUsername"
@@ -67,61 +72,12 @@
                     android:id="@+id/btnLogin"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:text="Login"
-                    android:backgroundTint="@color/primary_start"
+                    android:text="LOGIN"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/primary_blue"
                     app:cornerRadius="15dp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout
-            android:id="@+id/layoutDashboard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone"
-            android:layout_marginTop="20dp">
-
-            <Button
-                android:id="@+id/btnRumus"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:text="📐 Rumus Bangun Ruang"
-                android:textColor="@color/text_dark"
-                android:backgroundTint="@color/white"
-                app:cornerRadius="15dp"
-                android:layout_marginBottom="15dp"
-                android:textAllCaps="false"/>
-
-            <Button
-                android:id="@+id/btnLesIT"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:text="💻 Program Les IT Suci"
-                android:textColor="@color/text_dark"
-                android:backgroundTint="@color/white"
-                app:cornerRadius="15dp"
-                android:layout_marginBottom="15dp"
-                android:textAllCaps="false"/>
-
-            <Button
-                android:id="@+id/btnPendaftaran"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:text="📝 Info Pendaftaran"
-                android:textColor="@color/text_dark"
-                android:backgroundTint="@color/white"
-                app:cornerRadius="15dp"
-                android:layout_marginBottom="15dp"
-                android:textAllCaps="false"/>
-
-            <Button
-                android:id="@+id/btnLogout"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Keluar"
-                android:backgroundTint="@color/error_red"
-                app:cornerRadius="15dp"
-                android:layout_marginTop="20dp"/>
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>

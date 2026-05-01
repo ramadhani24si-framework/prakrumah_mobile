@@ -4,4 +4,6 @@
     <string name="desc_login">Silahkan masuk untuk melanjutkan akses aplikasi.</string>
     <string name="btn_login">Masuk Sekarang</string>
     <string name="welcome_msg">Halo, Selamat Datang !</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
