@@ -1,15 +1,14 @@
-package com.example.sucii_apps.pertemuan_3
+package com.example.sucii_apps.Home.pertemuan_3
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sucii_apps.databinding.ActivityThirdBinding
-import com.example.sucii_apps.pertemuan_2.SecondActivity
-import com.example.sucii_apps.pertemuan_4.FourthActivity
+import com.example.sucii_apps.Home.pertemuan_2.SecondActivity
+import com.example.sucii_apps.Home.pertemuan_4.FourthActivity
 import com.google.android.material.snackbar.Snackbar
 
 class ThirdActivity : AppCompatActivity() {

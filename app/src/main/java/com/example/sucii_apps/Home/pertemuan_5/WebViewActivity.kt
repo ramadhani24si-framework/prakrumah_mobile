@@ -1,4 +1,4 @@
-package com.example.sucii_apps.pertemuan_5
+package com.example.sucii_apps.Home.pertemuan_5
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -15,26 +15,17 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        // Jeda 2000ms (2 detik)
         Handler(Looper.getMainLooper()).postDelayed({
-
-            // CEK SHAREDPREFERENCES
             val sharedPref = getSharedPreferences("user_pref", Context.MODE_PRIVATE)
             val isLogin = sharedPref.getBoolean("isLogin", false)
 
             if (isLogin) {
-                // Jika sudah login, langsung ke Dashboard Utama
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
+                // DIUBAH: Langsung ke BaseActivity
+                startActivity(Intent(this, BaseActivity::class.java))
             } else {
-                // Jika belum login, arahkan ke halaman Login (Auth)
-                val intent = Intent(this, AuthActivity::class.java)
-                startActivity(intent)
+                startActivity(Intent(this, AuthActivity::class.java))
             }
-
-            // Tutup Splash agar tidak bisa di-back
             finish()
-
         }, 2000)
     }
 }

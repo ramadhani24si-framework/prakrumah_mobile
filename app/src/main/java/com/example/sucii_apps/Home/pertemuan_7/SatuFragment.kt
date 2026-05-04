@@ -1,4 +1,4 @@
-package com.example.sucii_apps.pertemuan_6
+package com.example.sucii_apps.Home.pertemuan_7
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.sucii_apps.R
 
-class TigaFragment : Fragment() {
+class SatuFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

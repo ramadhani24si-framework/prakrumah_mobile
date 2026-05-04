@@ -6,10 +6,10 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sucii_apps.databinding.ActivityMainBinding
 // Import activity dari package pertemuan lain
-import com.example.sucii_apps.pertemuan_2.SecondActivity
-import com.example.sucii_apps.pertemuan_4.FourthActivity
-import com.example.sucii_apps.pertemuan_5.WebViewActivity
-import com.example.sucii_apps.pertemuan_6.SixthActivity
+import com.example.sucii_apps.Home.pertemuan_2.SecondActivity
+import com.example.sucii_apps.Home.pertemuan_4.FourthActivity
+import com.example.sucii_apps.Home.pertemuan_5.WebViewActivity
+import com.example.sucii_apps.Home.pertemuan_7.SeventhActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         // 4. Ke Fragment (Pertemuan 6)
         binding.btnPertemuan6.setOnClickListener {
-            startActivity(Intent(this, SixthActivity::class.java))
+            startActivity(Intent(this, SeventhActivity::class.java))
         }
 
         // 5. Logika Logout
