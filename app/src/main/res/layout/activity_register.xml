@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_light"
+    android:background="#F5F6FA"
     android:fillViewport="true">
 
     <LinearLayout
@@ -13,19 +13,12 @@
         android:padding="24dp"
         android:gravity="center_horizontal">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="60dp"
-            android:src="@drawable/ic_logo_apps" />
-
         <TextView
-            android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="LearnPath"
-            android:textColor="@color/primary_blue"
+            android:layout_marginTop="40dp"
+            android:text="Create Account"
+            android:textColor="#4F73DF"
             android:textSize="28sp"
             android:textStyle="bold" />
 
@@ -42,53 +35,54 @@
                 android:orientation="vertical"
                 android:padding="25dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Login to your account"
-                    android:layout_marginBottom="20dp"
-                    android:textColor="@color/text_dark"/>
+                <EditText
+                    android:id="@+id/etNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="Full Name"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:drawable/edit_text"/>
 
                 <EditText
-                    android:id="@+id/inputUsername"
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="Phone Number (OTP)"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:drawable/edit_text"/>
+
+                <EditText
+                    android:id="@+id/etUsername"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:hint="Username"
                     android:paddingLeft="15dp"
-                    android:background="@android:drawable/edit_text"
-                    android:layout_marginBottom="15dp"/>
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:drawable/edit_text"/>
 
                 <EditText
-                    android:id="@+id/inputPassword"
+                    android:id="@+id/etPassword"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:hint="Password"
                     android:inputType="textPassword"
                     android:paddingLeft="15dp"
-                    android:background="@android:drawable/edit_text"
-                    android:layout_marginBottom="25dp"/>
+                    android:layout_marginBottom="25dp"
+                    android:background="@android:drawable/edit_text"/>
 
                 <Button
-                    android:id="@+id/btnLogin"
+                    android:id="@+id/btnSubmitRegister"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:text="LOGIN"
+                    android:text="REGISTER"
                     android:textStyle="bold"
-                    android:backgroundTint="@color/primary_blue"
+                    android:backgroundTint="#4F73DF"
                     app:cornerRadius="15dp" />
-
-                <Button
-                    android:id="@+id/btnToRegister"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="Don't have an account? Register"
-                    android:textColor="@color/primary_blue"
-                    android:textAllCaps="false" />
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
-
     </LinearLayout>
 </ScrollView>

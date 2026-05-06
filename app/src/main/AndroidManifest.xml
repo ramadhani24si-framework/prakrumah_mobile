@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,56 +10,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Suciiapps"
-        android:usesCleartextTraffic="true" >
-
-        <!-- BASE ACTIVITY (Main Activity dengan BottomNav) -->
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" /> <!-- BASE ACTIVITY (Main Activity dengan BottomNav) -->
         <activity
             android:name=".BaseActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustNothing" />
-
         <activity
             android:name=".AuthActivity"
-            android:exported="false" />
-
-        <!-- SPLASH SCREEN (LAUNCHER) -->
+            android:exported="false" /> <!-- SPLASH SCREEN (LAUNCHER) -->
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- ===== PERTEMUAN 2 ===== -->
+        </activity> <!-- ===== PERTEMUAN 2 ===== -->
         <activity
             android:name=".Home.pertemuan_2.SecondActivity"
-            android:exported="false" />
-
-        <!-- ===== PERTEMUAN 3 ===== -->
+            android:exported="false" /> <!-- ===== PERTEMUAN 3 ===== -->
         <activity
             android:name=".Home.pertemuan_3.ThirdActivity"
-            android:exported="false" />
-
-        <!-- ===== PERTEMUAN 4 ===== -->
+            android:exported="false" /> <!-- ===== PERTEMUAN 4 ===== -->
         <activity
             android:name=".Home.pertemuan_4.FourthActivity"
-            android:exported="false" />
-
-        <!-- ===== PERTEMUAN 5 ===== -->
+            android:exported="false" /> <!-- ===== PERTEMUAN 5 ===== -->
         <activity
             android:name=".Home.pertemuan_5.FifthActivity"
             android:exported="false" />
         <activity
             android:name=".Home.pertemuan_5.WebViewActivity"
-            android:exported="false" />
-
-        <!-- ===== PERTEMUAN 7 ===== -->
+            android:exported="false" /> <!-- ===== PERTEMUAN 7 ===== -->
         <activity
             android:name=".Home.pertemuan_7.SeventhActivity"
             android:exported="false" />
-
     </application>
 
 </manifest>
